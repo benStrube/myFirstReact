@@ -3,12 +3,22 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Model from './cars/model';
+import Garage from './cars/garage';
+import Football from './football/football';
+import MyForm from './forms/myForm';
+
+var mycar = new Model("Ford", "Mustang");
+mycar.show();
 
 const render = () => {
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <Garage />
+    <MyForm />
+    <Football />
   </React.StrictMode>,
   document.getElementById('root')
 );
