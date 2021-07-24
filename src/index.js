@@ -7,6 +7,7 @@ import Model from './cars/model';
 import Garage from './cars/garage';
 import Football from './football/football';
 import MyForm from './forms/myForm';
+import Routing from '../src/routing';
 
 var mycar = new Model("Ford", "Mustang");
 mycar.show();
@@ -16,6 +17,7 @@ const render = () => {
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <Routing />
     <Garage />
     <MyForm />
     <Football />
